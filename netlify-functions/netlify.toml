@@ -1,0 +1,9 @@
+# netlify.toml file
+
+[build]
+  functions = "netlify-functions"  # Custom folder for your functions
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
